@@ -37,19 +37,30 @@ p {
     margin: 0 0 0.5rem 0.3rem;
 }
 
+.card-container {
+    height: 18rem;
+    position: relative;
+    margin: 2rem;
+}
+
 .card {
+    position: absolute;
     width: 24.3rem;
     height: 15rem;
     border-radius: 15px;
-    margin-bottom: 2rem;
+    box-shadow: 0 0 8px gray;
+
 }
 
 /* ***front*** */
 
 .front {
-    border: solid 3px #c8c6c1;
+    top: 0;
+    left: 10%;
+    border: solid 1px #c8c6c1;
     padding: 2rem;
     background-color: #f0f0ed;
+    z-index: 2;
 }
 
 .form-group {
@@ -82,13 +93,16 @@ p {
 /* ***back*** */
 
 .back {
+    top: 2rem;
+    left: 30%;
     background-color: #d8d8d7;
     display: grid;
     grid-template-rows: 1fr 2fr;
+    z-index: 1;
 }
 
 .magnetic-stripe {
-    border-bottom: 3rem solid #272625da;
+    border-bottom: 3rem solid #595855da;
 }
 
 .cvc-container {
@@ -105,6 +119,7 @@ p {
 
 .send-button {
     width: 20%;
+    margin: 0 auto;
 }
 
 .form-group input[type="submit"] {
@@ -117,3 +132,4 @@ p {
     border-radius: 10px;
 }
 
+/* ***position*** */

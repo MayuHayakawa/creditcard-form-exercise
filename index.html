@@ -12,40 +12,45 @@
         <div class="container" class="col-0">
             <form action="#" method="POST">
 
-                <div class="card front">
-                    <div class="form-group">
-                        <label for="holder">Holder of card</label>
-                        <input type="text" name="holder" id="holder" placeholder="Holder of card" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="number">Number of card</label>
-                        <input type="text" name="number" id="number" placeholder="Number of card" required>
-                    </div>
-                    <div>
-                        <p>valid thrn</p>
-                        <div class="valid-thrn">
-                            <div class="form-group month">
-                                <label for="monthr">Month</label>
-                                <input type="text" name="month" id="month" placeholder="MM" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="year">Year</label>
-                                <input type="text" name="year" id="year" placeholder="YY" required>
+                <div class="card-container">
+
+                    <div class="card front">
+                        <div class="form-group">
+                            <label for="holder">Holder of card</label>
+                            <input type="text" name="holder" id="holder" placeholder="Holder of card" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Number of card</label>
+                            <input type="text" name="number" id="number" placeholder="Number of card" required>
+                        </div>
+                        <div>
+                            <p>VALID THRU</p>
+                            <div class="valid-thrn">
+                                <div class="form-group month">
+                                    <label for="monthr">Month</label>
+                                    <input type="text" name="month" id="month" placeholder="MM" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="year">Year</label>
+                                    <input type="text" name="year" id="year" placeholder="YY" required>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="card back">
+                        <div class="magnetic-stripe"></div>
+                        <div class="form-group cvc-container">
+                            <div class="blank"></div>
+                            <div class="cvc">
+                                <label for="cvc">CVC</label>
+                                <input type="text" name="cvc" id="cvc" placeholder="CVC" required>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="card back">
-                    <div class="magnetic-stripe"></div>
-                    <div class="form-group cvc-container">
-                        <div class="blank"></div>
-                        <div class="cvc">
-                            <label for="cvc">CVC</label>
-                            <input type="text" name="cvc" id="cvc" placeholder="CVC" required>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="send-button">
                     <div class="form-group">
