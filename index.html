@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container" class="col-0">
+            <form action="#" method="POST">
+
+                <div class="card front">
+                    <div class="form-group">
+                        <label for="holder">Holder of card</label>
+                        <input type="text" name="holder" id="holder" placeholder="Holder of card" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Number of card</label>
+                        <input type="text" name="number" id="number" placeholder="Number of card" required>
+                    </div>
+                    <div>
+                        <p>valid thrn</p>
+                        <div class="valid-thrn">
+                            <div class="form-group month">
+                                <label for="monthr">Month</label>
+                                <input type="text" name="month" id="month" placeholder="MM" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="year">Year</label>
+                                <input type="text" name="year" id="year" placeholder="YY" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card back">
+                    <div class="magnetic-stripe"></div>
+                    <div class="form-group cvc-container">
+                        <div class="blank"></div>
+                        <div class="cvc">
+                            <label for="cvc">CVC</label>
+                            <input type="text" name="cvc" id="cvc" placeholder="CVC" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="send-button">
+                    <div class="form-group">
+                        <input type="submit" value="send"/>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
